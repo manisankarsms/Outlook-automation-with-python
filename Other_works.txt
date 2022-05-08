@@ -1,0 +1,9 @@
+# To open Workbook
+wb = xlrd.open_workbook(loc)
+sheet = wb.sheet_by_index(0)
+
+# Extracting number of columns - sheet.ncols
+# Extracting number of columns - sheet.nrows
+for i in range(sheet.nrows):
+    if sheet.cell_value(i, 0) == mailBody:
+        pyautogui.alert(sheet.cell_value(i,1))

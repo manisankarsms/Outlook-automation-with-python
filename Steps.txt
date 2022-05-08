@@ -1,0 +1,35 @@
+Outlook to trigger a python script, when a mail received.
+
+1. To write a VBA Script to trigger, python program (Visual Basic for Applications)
+	In Projects, Insert module
+	Script:
+		Sub run_python(item As Outlook.MailItem)
+		Shell ("python C:\Users\manis\Desktop\PythonAuto\python_code.py")
+		End Sub
+
+2. Enable Macros, if not enabled..
+	Select “File” > “Options“.
+	Select “Trust Center” on the left pane, then select the “Trust Center Settings…” button.
+	Trust Center Settings button
+	Select “Macro Settings” on the left pane, then the desired setting.
+		Disable all macros without notification.
+		Notifications for digitally signed macros, all other macros disabled.
+		Notifications for all macros.
+		Enable all macros
+	You may have to check the “Apply macro security settings to installed add-ins” to allow macros to work with add-ins.
+	Outlook 2010 Macro settings
+	Click “OK“, then close and re-open Outlook for the setting to take effect.
+
+3. Enable run a script from Windows Registry.
+
+
+
+
+
+
+
+
+
+
+pip install pywin32
+pip install xlrd	
