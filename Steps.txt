@@ -4,7 +4,8 @@ Outlook to trigger a python script, when a mail received.
 	In Projects, Insert module
 	Script:
 		Sub run_python(item As Outlook.MailItem)
-		Shell ("python C:\Users\manis\Desktop\PythonAuto\python_code.py")
+		emailBody = item.Body
+		Shell ("python C:\Users\manis\Desktop\PythonAuto\python_code.py" & " " & emailBody)
 		End Sub
 
 2. Enable Macros, if not enabled..
