@@ -11,6 +11,6 @@ Triggering a python script when a email with specific subject or from specific m
  
 - create a outlook rule to trigger the above created script based on the required conditions
 
-- in most of the outlook versions, run a script in rules was disable, we need to enable it from windows registry
+- in most of the outlook versions, run a script in rules was disabled, we need to enable it from windows registry
 
   
