@@ -1,6 +1,6 @@
 # Outlook-automation-with-python
 
-Triggering a python script when a email with specific subject or from specific mail
+Triggering a python script when an email with specific subject or from specific mail
 
 - create a outlook macro (VBA) to trigger the python program
   Script:
